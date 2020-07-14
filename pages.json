@@ -1,0 +1,100 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/exercise/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+
+		}, {
+			"path": "pages/exercise-menu/index",
+			"style": {
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+
+						"titleText": "分享",
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "分享",
+								//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "12rpx"
+							},
+							{
+								//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize": "12rpx"
+							}
+						],
+						"backButton": { //自定义 backButton
+							"background": "#00FF00"
+						}
+					}
+				}
+
+			}
+		},
+		{
+			"path": "pages/music-library/index"
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/reg/reg",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7a7e83",
+		"selectedColor": "#0faeff",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/exercise/index",
+			"text": "音悦家",
+			"iconPath": "./static/img/tabImg/musician.png",
+			 "selectedIconPath": "./static/img/tabImg/musician.png"
+		}, {
+			"pagePath": "pages/exercise-menu/index",
+			"text": "陪练单",
+			"iconPath": "./static/img/tabImg/exercise-together.png",
+			"selectedIconPath": "./static/img/tabImg/exercise-together.png"
+		}, {
+			"pagePath": "pages/music-library/index",
+			"text": "乐谱库",
+			"iconPath": "./static/img/tabImg/music-library.png",
+			"selectedIconPath": "./static/img/tabImg/music-library.png"
+		}, {
+			"pagePath": "pages/user/index",
+			"text": "我的",
+			"iconPath": "./static/img/tabImg/mine.png",
+			"selectedIconPath": "./static/img/tabImg/mine.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#0faeff"
+	}
+}

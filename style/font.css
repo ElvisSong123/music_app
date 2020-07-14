@@ -1,0 +1,20 @@
+ @font-face {
+     font-family: 'PingFang-SC-Bold';
+     src: url('~@/static/font/pingfang/PingFang Bold.ttf');
+ }
+ @font-face {
+     font-family: 'PingFang-SC-ExtraLight';
+     src: url('~@/static/font/pingfang/PingFang ExtraLight.ttf');
+ }
+ @font-face {
+     font-family: 'PingFang-SC-Heavy';
+     src: url('~@/static/font/pingfang/PingFang Heavy.ttf');
+ }
+ @font-face {
+     font-family: 'PingFang-SC-Medium';
+     src: url('~@/static/font/pingfang/PingFang Medium.ttf');
+ }
+ @font-face {
+     font-family: 'PingFang-SC-Regular';
+     src: url('~@/static/font/pingfang/PingFang Regular.ttf');
+ }
