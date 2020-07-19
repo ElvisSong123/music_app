@@ -113,7 +113,8 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less"> 
+    @import "../../style/font.css";
 	.title {
 		width: 750rpx;
 		background-color: #fff;
@@ -202,7 +203,7 @@
 					.time,
 					.lesson-class {
 						padding: 10rpx 0;
-						font-family:PingFang-SC-Medium,PingFang-SC;
+						font-family:PingFang-SC-Medium;
 						font-weight:500;
 						color:rgba(51,51,51,1);
 						text {
@@ -237,7 +238,7 @@
 					justify-content: center;
 					align-items: center;
 					font-size: 24rpx;
-					font-family:PingFang-SC-Medium,PingFang-SC;
+					font-family:PingFang-SC-Medium;
 					font-weight:500;
 					color:rgba(51,51,51,1);;
 					.avatar {

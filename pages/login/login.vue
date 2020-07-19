@@ -15,11 +15,11 @@
 					<image v-else src="../../static/img/password-enter.png"></image>
 					<input v-model="password" @input="passwordInput" :password="!isSeePassword" type="text" placeholder="密码">
 				</view>
-				<text v-if="!isPasswordInput">忘记密码</text>
-				<text v-else class="logo">
+				<text v-if="!isPasswordInput" @click="navToForgetPassword">忘记密码</text>
+				<view v-else class="logo">
 					<image @touchstart="seePassword" @touchend="closePassword" class="eyes" src="../../static/img/eyes.png"></image>
 					<image @click="clearPassword" class="close" src="../../static/img/close.png"></image>
-				</text>
+				</view>
 			</view>
 		</view>
 		<button :class="['button',{'is-not':isNotClick}]" type="primary">下一步</button>
@@ -53,6 +53,11 @@
 		},
 		computed: mapState(['forcedLogin']),
 		methods: {
+			navToForgetPassword(){ 
+				uni.navigateTo({
+					url:'../forgetPwd/index'
+				})
+			},
 			phoneInput() {
 				if (this.phoneValue) {
 					this.isPhoneInput = true;
